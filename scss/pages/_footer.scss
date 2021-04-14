@@ -1,0 +1,15 @@
+@use "../base/variables" as base;
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 20vh;
+    background: base.$subtle-color;
+    color:base.$primary-color;
+
+    i {
+        padding: 0.25em;
+    }
+}

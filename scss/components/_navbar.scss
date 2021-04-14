@@ -1,0 +1,87 @@
+@use '../base/variables' as base ;
+
+//active class to open navbar menu
+
+
+.navbar {
+    width: 100%;
+    background-color: base.$primary-color;
+    min-height: 10vh;
+
+    .navbar-container{
+        width:80%;
+        margin: 0 auto;
+
+        .navbar-items {
+               
+            
+            
+            .navbar-item {
+                display: none;   
+                text-align: center;
+                
+            }
+        &.open {
+           .navbar-item{
+            display: block;
+            padding: 0.25em;
+                .navbar-link {
+                    color: base.$tertiary-color;
+                }
+           }
+        }
+        }
+        .toggle-menu {
+            position: absolute;
+            width: 30px;
+            top: 2em;
+            right: 0.5em;
+            display: block;
+        
+            .bar {
+              width: 100%;
+              height: 3px;
+              border-radius: 5px;
+              background-color: darken(base.$tertiary-color, 20%);
+              transition: all 300ms ease-in-out;
+        
+              &::after,
+              &::before {
+                position: absolute;
+                content: "";
+                width: 100%;
+                height: 3px;
+                background-color: darken(base.$tertiary-color, 20%);
+                border-radius: 5px;
+              }
+        
+              &::before {
+                transform: translateY(-10px);
+              }
+              &::after {
+                transform: translateY(10px);
+              }
+            }
+            // animation on click
+            &.active .bar {
+              transform: translateX(-50px);
+              background: transparent;
+            }
+            &.active .bar::before {
+              transform: rotate(45deg) translate(25px, -25px);
+            }
+        
+            &.active .bar::after {
+              transform: rotate(-45deg) translate(25px, 25px);
+            }
+          }
+
+        
+        }
+   }
+
+
+
+
+
+ 

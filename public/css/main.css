@@ -1,0 +1,209 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+}
+
+p {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+input,
+textarea,
+select {
+  outline: none;
+  border: none;
+}
+
+input {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+li {
+  list-style-type: none;
+}
+
+.navbar {
+  width: 100%;
+  background-color: #1938AB;
+  min-height: 10vh;
+}
+.navbar .navbar-container {
+  width: 80%;
+  margin: 0 auto;
+}
+.navbar .navbar-container .navbar-items .navbar-item {
+  display: none;
+  text-align: center;
+}
+.navbar .navbar-container .navbar-items.open .navbar-item {
+  display: block;
+  padding: 0.25em;
+}
+.navbar .navbar-container .navbar-items.open .navbar-item .navbar-link {
+  color: #FFFADE;
+}
+.navbar .navbar-container .toggle-menu {
+  position: absolute;
+  width: 30px;
+  top: 2em;
+  right: 0.5em;
+  display: block;
+}
+.navbar .navbar-container .toggle-menu .bar {
+  width: 100%;
+  height: 3px;
+  border-radius: 5px;
+  background-color: #ffeb78;
+  transition: all 300ms ease-in-out;
+}
+.navbar .navbar-container .toggle-menu .bar::after, .navbar .navbar-container .toggle-menu .bar::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 3px;
+  background-color: #ffeb78;
+  border-radius: 5px;
+}
+.navbar .navbar-container .toggle-menu .bar::before {
+  transform: translateY(-10px);
+}
+.navbar .navbar-container .toggle-menu .bar::after {
+  transform: translateY(10px);
+}
+.navbar .navbar-container .toggle-menu.active .bar {
+  transform: translateX(-50px);
+  background: transparent;
+}
+.navbar .navbar-container .toggle-menu.active .bar::before {
+  transform: rotate(45deg) translate(25px, -25px);
+}
+.navbar .navbar-container .toggle-menu.active .bar::after {
+  transform: rotate(-45deg) translate(25px, 25px);
+}
+
+.intro {
+  min-height: 80vh;
+  background: url(../../images/jumborton.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.intro .intro-container {
+  width: 80%;
+  margin: 0 auto;
+}
+.intro .intro-container .intro-text {
+  font-weight: 800;
+  font-size: 3rem;
+  line-height: 1;
+  padding: 0.5em;
+  margin-bottom: 1em;
+}
+.intro .intro-container .input-container {
+  display: flex;
+  background-color: #fff;
+  padding: 0.5em 0.2em;
+  border: 1px solid #FFFADE;
+  border-radius: 10px;
+}
+.intro .intro-container .input-container .property-options {
+  background-color: #6BBAA3;
+  border-radius: 5px;
+}
+.intro .intro-container .input-container .property-options select {
+  background-color: inherit;
+  color: #fff;
+}
+.intro .intro-container .input-container .location-search-bar {
+  margin-left: 0.2em;
+}
+.intro .intro-container .input-container .location-search-bar .location-filter {
+  font-size: 1.5rem;
+}
+.intro .intro-container .input-container .search-bar {
+  margin-left: auto;
+}
+.intro .intro-container .input-container .search-bar i {
+  font-size: 1.5rem;
+  color: #6BBAA3;
+}
+
+.listings {
+  min-height: 100vh;
+  background: #ACA5DB;
+}
+.listings .listing-container {
+  min-width: 350px;
+}
+.listings .listing-container .listing-image {
+  width: 100%;
+}
+.listings .listing-container .listing-detail .list-description {
+  font-size: 1.5rem;
+}
+.listings .listing-container .listing-detail .list-price {
+  font-size: 1rem;
+}
+
+.general-info {
+  background: #FFFADE;
+}
+.general-info .general-info-container {
+  width: 80%;
+  margin: 0 auto;
+  color: #6BBAA3;
+}
+.general-info .general-info-container .about-us, .general-info .general-info-container .popular-searches, .general-info .general-info-container .support {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #ACA5DB;
+}
+.general-info .general-info-container .about-us h3, .general-info .general-info-container .popular-searches h3, .general-info .general-info-container .support h3 {
+  font-size: 1.5rem;
+  padding: 0.5em;
+}
+.general-info .general-info-container .about-us a, .general-info .general-info-container .popular-searches a, .general-info .general-info-container .support a {
+  padding: 0.5em;
+  color: #ACA5DB;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 20vh;
+  background: #6BBAA3;
+  color: #1938AB;
+}
+footer i {
+  padding: 0.25em;
+}
+
+/*# sourceMappingURL=main.css.map */

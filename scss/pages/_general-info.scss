@@ -1,0 +1,27 @@
+@use "../base/variables" as base;
+
+.general-info {
+    
+    background: base.$tertiary-color;
+    .general-info-container {
+     width: 80%;
+     margin: 0 auto;
+     color: base.$subtle-color; 
+       .about-us, .popular-searches, .support {
+           display: flex;
+           flex-direction: column;
+           border-bottom: 1px solid base.$secondary-color;
+
+           h3 {
+               font-size: base.$medium-text;
+               padding: 0.5em;
+           }
+           
+
+           a {
+              padding: 0.5em;
+              color: base.$secondary-color;
+           }
+       }
+    }
+}

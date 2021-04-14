@@ -1,0 +1,64 @@
+@use '../base/variables' as base;
+
+.intro {
+    min-height: 80vh;
+    background: url(../../images/jumborton.jpg)  no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+   .intro-container {
+    width: 80% ;
+    margin: 0 auto;
+
+    .intro-text {
+        font-weight: base.$extra-bold-text;
+        font-size: base.$xlarge-text;
+        line-height: base.$lh-medium;
+        padding: 0.5em;
+        margin-bottom: 1em;
+    }
+
+    .input-container {
+        display: flex;
+        background-color: #fff;
+        padding: 0.5em 0.2em;
+        border: 1px solid base.$tertiary-color ;
+        border-radius: 10px;
+
+        .property-options {
+            background-color: base.$subtle-color;
+            border-radius: 5px;
+
+            select {
+                background-color: inherit;
+                color: #fff;
+            }
+        
+        }
+
+        .location-search-bar {
+            margin-left: 0.2em;
+            
+            .location-filter {
+                font-size: base.$medium-text;
+            }
+
+            
+        }
+
+        .search-bar {
+            margin-left: auto;
+            
+            
+            // padding: 0.25em;
+
+            i {
+                font-size: base.$medium-text;
+                color:base.$subtle-color;;
+            }
+        }
+    }
+   }
+}

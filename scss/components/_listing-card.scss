@@ -1,0 +1,25 @@
+@use '../base/variables' as base ;
+
+.listings {
+
+    min-height: 100vh;
+    background: base.$secondary-color;
+
+.listing-container {
+    min-width: 350px;
+
+    .listing-image {
+        width: 100%;
+    }
+
+    .listing-detail {
+        .list-description {
+            font-size: base.$medium-text;
+        }
+
+        .list-price {
+            font-size: base.$base-text;
+        }
+    }
+}
+}
