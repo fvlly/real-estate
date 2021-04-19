@@ -1,0 +1,44 @@
+@use "../base/" as base;
+
+.new-property {
+    width: 80%;
+    margin: 0 auto;
+    background-color: base.$subtle-color;
+
+    .property-info {
+        margin-bottom: 1em;
+        padding: 0.5em 0.75em;
+
+        .list-title {
+            font-size: base.$medium-text;
+            line-height: base.$lh-large;
+            color: base.$primary-color;
+            margin-bottom: 1em;
+        }
+
+        .list-body {
+            width: 60%;
+            margin: 0 auto;
+            line-height: base.$lh-large;
+            color: base.$tertiary-color;
+        }
+
+    
+    }
+    .new-listings-btn {
+        width: 50%;
+        position: relative;
+        left:25%;
+        font-size: base.$medium-text;
+        margin-bottom: 1em;
+        padding: 0.25em 0.5em;
+        background: base.$primary-color;
+    
+        border-radius: 5px;
+        text-align: center;
+         
+        a {
+            color: base.$tertiary-color;
+        }
+    }
+}

@@ -1,25 +1,34 @@
-@use '../base/variables' as base ;
+@use '../base/variables' as base;
 
 .listings {
+  min-height: 100vh;
+  background: base.$secondary-color;
 
-    min-height: 100vh;
-    background: base.$secondary-color;
+ 
+}
 
-.listing-container {
-    min-width: 350px;
+.listings-container {
+    width: 80%;
+    margin: 0 auto;
+    
+    .listing-portfolio {
+      width: 350px;
+      height: 350px;
+      border: 1px solid #444;
+      margin: 1em auto;
 
-    .listing-image {
+      .listing-image {
         width: 100%;
-    }
+      }
 
-    .listing-detail {
+      .listing-detail {
         .list-description {
-            font-size: base.$medium-text;
+          font-size: base.$medium-text;
         }
 
         .list-price {
-            font-size: base.$base-text;
+          font-size: base.$base-text;
         }
+      }
     }
-}
-}
+  }

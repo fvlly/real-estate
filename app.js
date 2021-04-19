@@ -10,6 +10,10 @@ app.set("view engine", "ejs")
 app.get("/",(req,res)=>{
     res.render('home')
 })
+app.get("/buy",(req,res)=>{
+    res.render('buy')
+})
+
 
 
 
