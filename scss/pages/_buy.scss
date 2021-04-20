@@ -1,133 +1,181 @@
 @use "../base/" as base;
 
-.property-search {
-    width: 80%;
-    margin: 0 auto;
-    background: base.$secondary-color;
-    border: 1px solid base.$tertiary-color;
-    border-radius: 10em;
-
-    input {
-        font-size: base.$medium-text;
-        padding: 0.5em;
+.buy, .sell {
+    background: base.$tertiary-color;
+    padding-top: 1.5em;
+    .property-search {
+        width: 80%;
+        margin: 0 auto;
+        padding: 1em;
+        background:#fff;
+        border: 1px solid base.$tertiary-color;
+        border-radius: 10em;
+    
+        input {
+            font-size: base.$medium-text;
+          
+        }
+    }
+    
+    .property-filter {
+        
+        cursor: pointer;
+    
+        .filter-menu {
+            width: 80%;
+            margin: 0 auto;
+           
+            padding: 1em 0;
+            display: flex;
+            justify-content: space-between;
+        
+           .filter-container {
+            width: 50%;
+    
+            .dropdown-container {
+                display: flex;
+                justify-content: space-between;
+                background: base.$subtle-color;
+                font-size: base.$medium-text;
+                padding: 0.25em 0.5em;
+                color: base.$tertiary-color;
+            }
+               .filter-options {
+                display: none;
+            .custom-label {
+                font-size: base.$medium-text;
+                font-weight: base.$bold-text;
+                color: base.$secondary-color;
+            }
+                
+            .custom-select {
+            @include base.property-select;
+        }
+        .custom-select::-ms-expand {
+            display: none;
+        }
+        .custom-select:hover {
+            border-color: #888;
+        }
+        .custom-select:focus {
+            border-color: #aaa;
+            box-shadow: 0 0 1px 3px rgba(59, 153, 252, .7);
+            box-shadow: 0 0 0 3px -moz-mac-focusring;
+            color: #222;
+            outline: none;
+        }
+        .custom-select option {
+            font-weight:base.$regular-text;
+        
+        
+        }
+        
+            .update-filter {
+                font-size:base.$medium-text;
+                padding: 0.25em 0.5em;
+                background-color: base.$subtle-color;
+                border-radius: 0.5em;
+                color: base.$tertiary-color;
+            }
+    
+            &.show {
+                    
+                        display: block;
+                    
+                    
+                }
+            
+               }
+           }
+    
+           .sort-container {
+               width: 50%;
+            .dropdown-container {
+                display: flex;
+                justify-content: space-between;
+                background: base.$subtle-color;
+                font-size: base.$medium-text;
+                padding: 0.25em 0.5em;
+                color: base.$tertiary-color;
+            }
+            
+            .sorting-options {
+                display: none;
+             
+                .custom-select {
+                    @include base.property-select;
+                }
+                .custom-select::-ms-expand {
+                    display: none;
+                }
+                .custom-select:hover {
+                    border-color: #888;
+                }
+                .custom-select:focus {
+                    border-color: #aaa;
+                    box-shadow: 0 0 1px 3px rgba(59, 153, 252, .7);
+                    box-shadow: 0 0 0 3px -moz-mac-focusring;
+                    color: #222;
+                    outline: none;
+                }
+                .custom-select option {
+                    font-weight:base.$regular-text;
+                
+                
+                }
+                &.show {
+              
+                    display: block;
+                }
+            }
+           }
+    
+        
+        
+            }
+    
     }
 }
 
-.property-filter {
-    
-    cursor: pointer;
 
-    .filter-menu {
-        width: 80%;
-        margin: 0 auto;
-       display: flex;
-       justify-content: space-between;
-    
-       .filter-container {
-        width: 50%;
 
-        .dropdown-container {
-            display: flex;
-            justify-content: space-between;
-            background: base.$subtle-color;
-            font-size: base.$medium-text;
-            padding: 0.25em 0.5em;
-            color: base.$tertiary-color;
-        }
-           .filter-options {
-            display: none;
-        .custom-label {
-            font-size: base.$medium-text;
-            font-weight: base.$bold-text;
-            color: base.$secondary-color;
-        }
-            
-        .custom-select {
-        @include base.property-select;
-    }
-    .custom-select::-ms-expand {
-        display: none;
-    }
-    .custom-select:hover {
-        border-color: #888;
-    }
-    .custom-select:focus {
-        border-color: #aaa;
-        box-shadow: 0 0 1px 3px rgba(59, 153, 252, .7);
-        box-shadow: 0 0 0 3px -moz-mac-focusring;
-        color: #222;
-        outline: none;
-    }
-    .custom-select option {
-        font-weight:base.$regular-text;
+.buy-support{
+    background: base.$supplementary-color;
     
-    
-    }
-    
-        .update-filter {
-            font-size:base.$medium-text;
-            padding: 0.25em 0.5em;
-            background-color: base.$subtle-color;
-            border-radius: 0.5em;
-            color: base.$tertiary-color;
-        }
+.additional-info {
+    width: 80%;
+    margin: 0 auto;
 
-        &.show {
-                
-                    display: block;
-                
-                
-            }
-        
-           }
-       }
-
-       .sort-container {
-           width: 50%;
-        .dropdown-container {
-            display: flex;
-            justify-content: space-between;
-            background: base.$subtle-color;
-            font-size: base.$medium-text;
-            padding: 0.25em 0.5em;
-            color: base.$tertiary-color;
-        }
-        
-        .sorting-options {
-            display: none;
+    .total-properties {
+        font-size: base.$medium-text;
          
-            .custom-select {
-                @include base.property-select;
-            }
-            .custom-select::-ms-expand {
-                display: none;
-            }
-            .custom-select:hover {
-                border-color: #888;
-            }
-            .custom-select:focus {
-                border-color: #aaa;
-                box-shadow: 0 0 1px 3px rgba(59, 153, 252, .7);
-                box-shadow: 0 0 0 3px -moz-mac-focusring;
-                color: #222;
-                outline: none;
-            }
-            .custom-select option {
-                font-weight:base.$regular-text;
-            
-            
-            }
-            &.show {
-          
-                display: block;
-            }
-        }
-       }
+        padding: 1em 0 ;
+        color: base.$primary-color;
+    }
 
-    
-    
-        }
+    .purchase-support {
+        font-size: base.$medium-text;
+        padding: 1em 0 ;
+        color: base.$primary-color;
+        line-height: base.$lh-medium;
+    }
+  
 
+    p {
+        padding: 0.25em 0.45em;
+        color:lighten(base.$primary-color, 25%);
+    }
+
+    a {
+        display: block;
+        padding: 0.5em 0.45em;
+    }
+    
+    a:last-child(n) {
+        margin-bottom: 1em;
+    }
+
+}
 }
 
 

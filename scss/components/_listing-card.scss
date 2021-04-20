@@ -19,9 +19,12 @@
 
       .listing-image {
         width: 100%;
+        min-height: 250px;
+          border: 1px solid #444;
       }
 
       .listing-detail {
+          
         .list-description {
           font-size: base.$medium-text;
         }

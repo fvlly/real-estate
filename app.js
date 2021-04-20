@@ -13,6 +13,9 @@ app.get("/",(req,res)=>{
 app.get("/buy",(req,res)=>{
     res.render('buy')
 })
+app.get("/sell",(req,res)=>{
+    res.render('sell')
+})
 
 
 
