@@ -1,0 +1,139 @@
+<%- include('partials/header') %>
+<section class="rental">
+  <div class="property-search">
+    <input type="text" placeholder="Enter A state" />
+  </div>
+
+  <div class="property-filter">
+    <div class="filter-menu">
+      <div class="filter-container">
+        <div class="dropdown-container">
+          <span class="filters">Filters</span>
+          <span class="drop-icon"> ></span>
+        </div>
+        <!-- Filters for the various property types -->
+        <div class="filter-options">
+          <label class="custom-label" for="Property-type">Property Type</label>
+          <select
+            class="custom-select"
+            name="property-type"
+            id="property-type"
+            class=""
+          >
+            <option value="apartments">Apartments</option>
+            <option value="house">House</option>
+            <option value="rooms">Rooms</option>
+            
+          </select>
+
+          <!-- Filters for the available number pf room -->
+          <label class="custom-label" for="number-of-bedrooms"
+            >Number of bedrooms</label
+          >
+          <select class="custom-select" name="bedrooms" id="bedrooms">
+            <option value="one">1</option>
+            <option value="two">2</option>
+            <option value="three">3</option>
+            <option value="four">4</option>
+            <option value="five">5</option>
+            <option value="six">5+</option>
+          </select>
+
+          <!--daily weekly and monthly prices of apartments -->
+          <label class="radio radio-before">
+            <span class="radio__input">
+              <input type="radio" name="radio" />
+              <span class="radio__control"></span>
+            </span>
+            <span class="radio__label">Daily</span>
+          </label>
+          <label class="radio radio-before">
+            <span class="radio__input">
+              <input type="radio" name="radio" />
+              <span class="radio__control"></span>
+            </span>
+            <span class="radio__label">Weekly</span>
+          </label>
+          <label class="radio radio-before">
+            <span class="radio__input">
+              <input type="radio" name="radio" />
+              <span class="radio__control"></span>
+            </span>
+            <span class="radio__label">Monthly</span>
+          </label>
+          <!-- prices of property -->
+          <label class="custom-label" for="Price">Price</label>
+          <select class="custom-select" name="minimum-price" id="minimum-price">
+            <option value="no minimum">no minimum</option>
+            <option value="100k">100000</option>
+            <option value="500k">500000</option>
+            <option value="1m">1000000</option>
+            <option value="10m">10000000</option>
+            <option value="100m">100000000</option>
+            <option value="1b">1000000000</option>
+            <option value="10b">10000000000</option>
+          </select>
+          <span>-</span>
+          <select class="custom-select" name="maximum-price" id="maximum-price">
+            <option value="no maximum">no maximum</option>
+            <option value="100k">100000</option>
+            <option value="500k">500000</option>
+            <option value="1m">1000000</option>
+            <option value="10m">10000000</option>
+            <option value="100m">100000000</option>
+            <option value="1b">1000000000</option>
+            <option value="10b">10000000000</option>
+          </select>
+
+          <button type="submit" class="update-filter">Update</button>
+        </div>
+      </div>
+      <div class="sort-container">
+        <div class="dropdown-container">
+          <span class="sort"> Sort</span>
+          <span class="drop-icon">></span>
+        </div>
+        <div class="sorting-options">
+          <select class="custom-select" name="sorting" id="sort-dropmenu">
+            <option value="newest">Newest to Oldest</option>
+            <option value="cost">Most expensive to least expensive</option>
+            <option value="rooms">Rooms</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <%- include('partials/listings') %> <%- include('partials/new-listings') %>
+</section>
+
+<section class="general-info">
+
+    <div class="general-info-container">
+        <div class="about-us">
+          <h3>There are 1213 properties yet to be viewed</h3>
+          <p>please add some filters above to see more enlisted properties such as:</p>
+      
+          <a href="">Flats</a>
+          <a href="">Just houses</a>
+        </div>
+        <div class="popular-searches">
+          <h3>Rental Searches</h3>
+    
+          <a href="http://">Lettings</a>
+          <a href="http://">Short lets</a>
+          <a href="http://">Short letting in Abuja</a>
+          <a href="http://">Event Centres</a>
+        </div>
+        <div class="support">
+          <h3>Tenancy Guide</h3>
+    
+          <a href="http://">Right of tenant</a>
+          <a href="http://">Tenant support</a>
+          <a href="http://">Fees and Terms</a>
+          <a href="http://">Merits of Blanks</a>
+        </div>
+      </div>
+</section>
+
+<%- include('partials/footer') %>

@@ -220,11 +220,11 @@ li {
   color: #FFFADE;
 }
 
-.buy, .sell {
-  background: #FFFADE;
+.buy, .sell, .rental {
+  background: white;
   padding-top: 1.5em;
 }
-.buy .property-search, .sell .property-search {
+.buy .property-search, .sell .property-search, .rental .property-search {
   width: 80%;
   margin: 0 auto;
   padding: 1em;
@@ -232,23 +232,23 @@ li {
   border: 1px solid #FFFADE;
   border-radius: 10em;
 }
-.buy .property-search input, .sell .property-search input {
+.buy .property-search input, .sell .property-search input, .rental .property-search input {
   font-size: 1.5rem;
 }
-.buy .property-filter, .sell .property-filter {
+.buy .property-filter, .sell .property-filter, .rental .property-filter {
   cursor: pointer;
 }
-.buy .property-filter .filter-menu, .sell .property-filter .filter-menu {
+.buy .property-filter .filter-menu, .sell .property-filter .filter-menu, .rental .property-filter .filter-menu {
   width: 80%;
   margin: 0 auto;
   padding: 1em 0;
   display: flex;
   justify-content: space-between;
 }
-.buy .property-filter .filter-menu .filter-container, .sell .property-filter .filter-menu .filter-container {
+.buy .property-filter .filter-menu .filter-container, .sell .property-filter .filter-menu .filter-container, .rental .property-filter .filter-menu .filter-container {
   width: 50%;
 }
-.buy .property-filter .filter-menu .filter-container .dropdown-container, .sell .property-filter .filter-menu .filter-container .dropdown-container {
+.buy .property-filter .filter-menu .filter-container .dropdown-container, .sell .property-filter .filter-menu .filter-container .dropdown-container, .rental .property-filter .filter-menu .filter-container .dropdown-container {
   display: flex;
   justify-content: space-between;
   background: #6BBAA3;
@@ -256,15 +256,15 @@ li {
   padding: 0.25em 0.5em;
   color: #FFFADE;
 }
-.buy .property-filter .filter-menu .filter-container .filter-options, .sell .property-filter .filter-menu .filter-container .filter-options {
+.buy .property-filter .filter-menu .filter-container .filter-options, .sell .property-filter .filter-menu .filter-container .filter-options, .rental .property-filter .filter-menu .filter-container .filter-options {
   display: none;
 }
-.buy .property-filter .filter-menu .filter-container .filter-options .custom-label, .sell .property-filter .filter-menu .filter-container .filter-options .custom-label {
+.buy .property-filter .filter-menu .filter-container .filter-options .custom-label, .sell .property-filter .filter-menu .filter-container .filter-options .custom-label, .rental .property-filter .filter-menu .filter-container .filter-options .custom-label {
   font-size: 1.5rem;
   font-weight: 600;
   color: #ACA5DB;
 }
-.buy .property-filter .filter-menu .filter-container .filter-options .custom-select, .sell .property-filter .filter-menu .filter-container .filter-options .custom-select {
+.buy .property-filter .filter-menu .filter-container .filter-options .custom-select, .sell .property-filter .filter-menu .filter-container .filter-options .custom-select, .rental .property-filter .filter-menu .filter-container .filter-options .custom-select {
   display: block;
   font-size: 1rem;
   font-family: sans-serif;
@@ -288,36 +288,36 @@ li {
   background-position: right 0.7em top 50%, 0 0;
   background-size: 0.65em auto, 100%;
 }
-.buy .property-filter .filter-menu .filter-container .filter-options .custom-select::-ms-expand, .sell .property-filter .filter-menu .filter-container .filter-options .custom-select::-ms-expand {
+.buy .property-filter .filter-menu .filter-container .filter-options .custom-select::-ms-expand, .sell .property-filter .filter-menu .filter-container .filter-options .custom-select::-ms-expand, .rental .property-filter .filter-menu .filter-container .filter-options .custom-select::-ms-expand {
   display: none;
 }
-.buy .property-filter .filter-menu .filter-container .filter-options .custom-select:hover, .sell .property-filter .filter-menu .filter-container .filter-options .custom-select:hover {
+.buy .property-filter .filter-menu .filter-container .filter-options .custom-select:hover, .sell .property-filter .filter-menu .filter-container .filter-options .custom-select:hover, .rental .property-filter .filter-menu .filter-container .filter-options .custom-select:hover {
   border-color: #888;
 }
-.buy .property-filter .filter-menu .filter-container .filter-options .custom-select:focus, .sell .property-filter .filter-menu .filter-container .filter-options .custom-select:focus {
+.buy .property-filter .filter-menu .filter-container .filter-options .custom-select:focus, .sell .property-filter .filter-menu .filter-container .filter-options .custom-select:focus, .rental .property-filter .filter-menu .filter-container .filter-options .custom-select:focus {
   border-color: #aaa;
   box-shadow: 0 0 1px 3px rgba(59, 153, 252, 0.7);
   box-shadow: 0 0 0 3px -moz-mac-focusring;
   color: #222;
   outline: none;
 }
-.buy .property-filter .filter-menu .filter-container .filter-options .custom-select option, .sell .property-filter .filter-menu .filter-container .filter-options .custom-select option {
+.buy .property-filter .filter-menu .filter-container .filter-options .custom-select option, .sell .property-filter .filter-menu .filter-container .filter-options .custom-select option, .rental .property-filter .filter-menu .filter-container .filter-options .custom-select option {
   font-weight: 400;
 }
-.buy .property-filter .filter-menu .filter-container .filter-options .update-filter, .sell .property-filter .filter-menu .filter-container .filter-options .update-filter {
+.buy .property-filter .filter-menu .filter-container .filter-options .update-filter, .sell .property-filter .filter-menu .filter-container .filter-options .update-filter, .rental .property-filter .filter-menu .filter-container .filter-options .update-filter {
   font-size: 1.5rem;
   padding: 0.25em 0.5em;
   background-color: #6BBAA3;
   border-radius: 0.5em;
   color: #FFFADE;
 }
-.buy .property-filter .filter-menu .filter-container .filter-options.show, .sell .property-filter .filter-menu .filter-container .filter-options.show {
+.buy .property-filter .filter-menu .filter-container .filter-options.show, .sell .property-filter .filter-menu .filter-container .filter-options.show, .rental .property-filter .filter-menu .filter-container .filter-options.show {
   display: block;
 }
-.buy .property-filter .filter-menu .sort-container, .sell .property-filter .filter-menu .sort-container {
+.buy .property-filter .filter-menu .sort-container, .sell .property-filter .filter-menu .sort-container, .rental .property-filter .filter-menu .sort-container {
   width: 50%;
 }
-.buy .property-filter .filter-menu .sort-container .dropdown-container, .sell .property-filter .filter-menu .sort-container .dropdown-container {
+.buy .property-filter .filter-menu .sort-container .dropdown-container, .sell .property-filter .filter-menu .sort-container .dropdown-container, .rental .property-filter .filter-menu .sort-container .dropdown-container {
   display: flex;
   justify-content: space-between;
   background: #6BBAA3;
@@ -325,10 +325,10 @@ li {
   padding: 0.25em 0.5em;
   color: #FFFADE;
 }
-.buy .property-filter .filter-menu .sort-container .sorting-options, .sell .property-filter .filter-menu .sort-container .sorting-options {
+.buy .property-filter .filter-menu .sort-container .sorting-options, .sell .property-filter .filter-menu .sort-container .sorting-options, .rental .property-filter .filter-menu .sort-container .sorting-options {
   display: none;
 }
-.buy .property-filter .filter-menu .sort-container .sorting-options .custom-select, .sell .property-filter .filter-menu .sort-container .sorting-options .custom-select {
+.buy .property-filter .filter-menu .sort-container .sorting-options .custom-select, .sell .property-filter .filter-menu .sort-container .sorting-options .custom-select, .rental .property-filter .filter-menu .sort-container .sorting-options .custom-select {
   display: block;
   font-size: 1rem;
   font-family: sans-serif;
@@ -352,54 +352,24 @@ li {
   background-position: right 0.7em top 50%, 0 0;
   background-size: 0.65em auto, 100%;
 }
-.buy .property-filter .filter-menu .sort-container .sorting-options .custom-select::-ms-expand, .sell .property-filter .filter-menu .sort-container .sorting-options .custom-select::-ms-expand {
+.buy .property-filter .filter-menu .sort-container .sorting-options .custom-select::-ms-expand, .sell .property-filter .filter-menu .sort-container .sorting-options .custom-select::-ms-expand, .rental .property-filter .filter-menu .sort-container .sorting-options .custom-select::-ms-expand {
   display: none;
 }
-.buy .property-filter .filter-menu .sort-container .sorting-options .custom-select:hover, .sell .property-filter .filter-menu .sort-container .sorting-options .custom-select:hover {
+.buy .property-filter .filter-menu .sort-container .sorting-options .custom-select:hover, .sell .property-filter .filter-menu .sort-container .sorting-options .custom-select:hover, .rental .property-filter .filter-menu .sort-container .sorting-options .custom-select:hover {
   border-color: #888;
 }
-.buy .property-filter .filter-menu .sort-container .sorting-options .custom-select:focus, .sell .property-filter .filter-menu .sort-container .sorting-options .custom-select:focus {
+.buy .property-filter .filter-menu .sort-container .sorting-options .custom-select:focus, .sell .property-filter .filter-menu .sort-container .sorting-options .custom-select:focus, .rental .property-filter .filter-menu .sort-container .sorting-options .custom-select:focus {
   border-color: #aaa;
   box-shadow: 0 0 1px 3px rgba(59, 153, 252, 0.7);
   box-shadow: 0 0 0 3px -moz-mac-focusring;
   color: #222;
   outline: none;
 }
-.buy .property-filter .filter-menu .sort-container .sorting-options .custom-select option, .sell .property-filter .filter-menu .sort-container .sorting-options .custom-select option {
+.buy .property-filter .filter-menu .sort-container .sorting-options .custom-select option, .sell .property-filter .filter-menu .sort-container .sorting-options .custom-select option, .rental .property-filter .filter-menu .sort-container .sorting-options .custom-select option {
   font-weight: 400;
 }
-.buy .property-filter .filter-menu .sort-container .sorting-options.show, .sell .property-filter .filter-menu .sort-container .sorting-options.show {
+.buy .property-filter .filter-menu .sort-container .sorting-options.show, .sell .property-filter .filter-menu .sort-container .sorting-options.show, .rental .property-filter .filter-menu .sort-container .sorting-options.show {
   display: block;
-}
-
-.buy-support {
-  background: #e6dd3b;
-}
-.buy-support .additional-info {
-  width: 80%;
-  margin: 0 auto;
-}
-.buy-support .additional-info .total-properties {
-  font-size: 1.5rem;
-  padding: 1em 0;
-  color: #1938AB;
-}
-.buy-support .additional-info .purchase-support {
-  font-size: 1.5rem;
-  padding: 1em 0;
-  color: #1938AB;
-  line-height: 1;
-}
-.buy-support .additional-info p {
-  padding: 0.25em 0.45em;
-  color: #5c7ae7;
-}
-.buy-support .additional-info a {
-  display: block;
-  padding: 0.5em 0.45em;
-}
-.buy-support .additional-info a:last-child(n) {
-  margin-bottom: 1em;
 }
 
 .general-info {
@@ -435,6 +405,63 @@ footer {
 }
 footer i {
   padding: 0.25em;
+}
+
+.radio {
+  display: grid;
+  grid-template-columns: min-content auto;
+  grid-gap: 0.5em;
+  font-size: 1.5rem;
+  color: #ACA5DB;
+  padding: 0.5em;
+}
+.radio:focus-within .radio__label {
+  transform: scale(1.05);
+  opacity: 1;
+}
+
+.radio__label {
+  line-height: 1;
+  transition: 180ms all ease-in-out;
+  opacity: 0.8;
+}
+
+.radio__input {
+  display: flex;
+}
+.radio__input input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.radio__input input:focus + .radio__control {
+  box-shadow: 0 0 0 0.05em #fff, 0 0 0.15em 0.1em currentColor;
+}
+
+.radio-before .radio__control {
+  display: grid;
+  place-items: center;
+}
+.radio-before input + .radio__control::before {
+  content: "";
+  width: 0.5em;
+  height: 0.5em;
+  box-shadow: inset 0.5em 0.5em currentColor;
+  border-radius: 50%;
+  transition: 180ms transform ease-in-out;
+  transform: scale(0);
+}
+.radio-before input:checked + .radio__control::before {
+  transform: scale(1);
+}
+
+.radio__control {
+  display: block;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  border: 0.1em solid currentColor;
+  transform: translateY(-0.05em);
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,7 +1,9 @@
 @use "../base/" as base;
 
-.buy, .sell {
-    background: base.$tertiary-color;
+// the buy,sell and rental sections have the same template
+
+.buy, .sell, .rental {
+    background: lighten(base.$tertiary-color, 40%);
     padding-top: 1.5em;
     .property-search {
         width: 80%;
@@ -139,46 +141,3 @@
 
 
 
-.buy-support{
-    background: base.$supplementary-color;
-    
-.additional-info {
-    width: 80%;
-    margin: 0 auto;
-
-    .total-properties {
-        font-size: base.$medium-text;
-         
-        padding: 1em 0 ;
-        color: base.$primary-color;
-    }
-
-    .purchase-support {
-        font-size: base.$medium-text;
-        padding: 1em 0 ;
-        color: base.$primary-color;
-        line-height: base.$lh-medium;
-    }
-  
-
-    p {
-        padding: 0.25em 0.45em;
-        color:lighten(base.$primary-color, 25%);
-    }
-
-    a {
-        display: block;
-        padding: 0.5em 0.45em;
-    }
-    
-    a:last-child(n) {
-        margin-bottom: 1em;
-    }
-
-}
-}
-
-
-   
-    
-    
