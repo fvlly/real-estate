@@ -124,7 +124,7 @@ li {
 .intro .intro-container .intro-text {
   font-weight: 800;
   font-size: 3rem;
-  line-height: 1;
+  line-height: 1.3;
   padding: 0.5em;
   margin-bottom: 1em;
 }
@@ -195,14 +195,14 @@ li {
 }
 .new-property .property-info .list-title {
   font-size: 1.5rem;
-  line-height: 1.3;
+  line-height: 1.6;
   color: #1938AB;
   margin-bottom: 1em;
 }
 .new-property .property-info .list-body {
   width: 60%;
   margin: 0 auto;
-  line-height: 1.3;
+  line-height: 1.6;
   color: #FFFADE;
 }
 .new-property .new-listings-btn {
@@ -462,6 +462,199 @@ footer i {
   border-radius: 50%;
   border: 0.1em solid currentColor;
   transform: translateY(-0.05em);
+}
+
+.landlords {
+  min-height: 80vh;
+  background: url(../../images/jumborton.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  opacity: 0.9;
+}
+.landlords .landlord-container {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 1.5em;
+}
+.landlords .landlord-container .intro-text, .landlords .landlord-container .client-testimonial {
+  font-weight: 800;
+  font-size: 2rem;
+  line-height: 1.3em;
+  padding: 0.5em;
+  margin-bottom: 1em;
+  color: #FFFADE;
+}
+.landlords .landlord-container .client {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #2d5f51;
+}
+.landlords .landlord-container .call-to-action {
+  padding: 0 1em;
+}
+.landlords .landlord-container .call-to-action .client-enquiry {
+  color: #1938AB;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 1.3;
+  margin-bottom: 1em;
+}
+.landlords .landlord-container .call-to-action .existing-client {
+  color: #FFFADE;
+  font-size: 1.5rem;
+  line-height: 1.3;
+  text-align: center;
+}
+.landlords .landlord-container .call-to-action .existing-client a {
+  color: #2d5f51;
+}
+.landlords .landlord-container .call-to-action .client-register-btn {
+  width: 50%;
+  margin: 0 auto;
+  padding: 1em 0.5em;
+}
+.landlords .landlord-container .call-to-action .client-register-btn button {
+  padding: 0.5em 0.75em;
+  background: #1938AB;
+  border-radius: 10px;
+}
+.landlords .landlord-container .call-to-action .client-register-btn button a {
+  font-size: 1.5rem;
+  color: #FFFADE;
+}
+
+.management-benefits {
+  background: white;
+  padding-top: 1.5em;
+}
+.management-benefits .benefits-card {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 1.5em;
+  height: 500px;
+  border: 1px solid #ACA5DB;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px #444;
+}
+.management-benefits .benefits-card .benefit-image {
+  height: 150px;
+}
+.management-benefits .benefits-card .benefit-image img {
+  width: 100%;
+  height: 150px;
+  object-fit: fill;
+}
+.management-benefits .benefits-card .service-offered {
+  padding: 1em 0.75em;
+}
+.management-benefits .benefits-card .service-offered .service-title {
+  text-align: center;
+  font-size: 2rem;
+  color: #1938AB;
+}
+.management-benefits .benefits-card .service-offered .service-summary {
+  font-size: 1.5rem;
+  color: #5c7ae7;
+  padding: 0.5em 0.3em;
+  line-height: 1.3;
+}
+.management-benefits .benefits-card .service-detail {
+  padding: 0 0.8em;
+}
+.management-benefits .benefits-card .service-detail .service-statement {
+  color: #444;
+}
+.management-benefits .benefits-card .service-detail .client-register-btn {
+  width: 80%;
+  margin: 0 auto;
+  padding: 1.5em 0.5em;
+}
+.management-benefits .benefits-card .service-detail .client-register-btn button {
+  width: 100%;
+  padding: 0.5em 0.75em;
+  border-radius: 10px;
+  border: 1px solid #6BBAA3;
+}
+.management-benefits .benefits-card .service-detail .client-register-btn button a {
+  font-size: 1.5rem;
+  color: #6BBAA3;
+}
+
+.detailed-info {
+  min-height: 25vh;
+  background-color: #ACA5DB;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.detailed-info .info-container {
+  width: 80%;
+}
+.detailed-info .info-container h2 {
+  padding: 1.5em 0.5em;
+  color: #FFFADE;
+}
+.detailed-info .info-container a {
+  font-size: 1.5rem;
+  color: #1c3d33;
+  padding-bottom: 0.5em;
+}
+
+.letting-packages {
+  background: white;
+}
+.letting-packages .package-container {
+  margin: 1em 0;
+}
+.letting-packages .package-container .package-header {
+  background: #6BBAA3;
+  min-height: 15vh;
+  text-align: center;
+  padding: 1em;
+}
+.letting-packages .package-container .package-header .package-title {
+  padding: 1em 0.5em;
+  color: #FFFADE;
+}
+.letting-packages .package-container .package-header .package-fee {
+  padding-bottom: 0.5em;
+  color: #352c6e;
+}
+.letting-packages .package-container .package-header a {
+  font-size: 0.8rem;
+  color: #FFFADE;
+  text-decoration: underline;
+}
+.letting-packages .package-container .package-body {
+  min-height: 35vh;
+  text-align: center;
+}
+.letting-packages .package-container .package-body .package-options {
+  width: 70%;
+  margin: 1em auto;
+  text-align: center;
+}
+.letting-packages .package-container .package-body .package-options ul li {
+  padding: 0.5em 0.3em;
+  border-bottom: 1px solid #6BBAA3;
+}
+.letting-packages .package-container .package-body .client-register-btn {
+  width: 70%;
+  margin: 0 auto;
+  padding: 1.5em 0.5em;
+}
+.letting-packages .package-container .package-body .client-register-btn button {
+  width: 100%;
+  padding: 0.5em 0.75em;
+  border-radius: 10px;
+  border: 1px solid #6BBAA3;
+}
+.letting-packages .package-container .package-body .client-register-btn button a {
+  font-size: 1.5rem;
+  color: #352c6e;
 }
 
 /*# sourceMappingURL=main.css.map */

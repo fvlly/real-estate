@@ -1,0 +1,243 @@
+@use "../base/" as base;
+
+
+.landlords {
+    min-height: 80vh;
+    background: url(../../images/jumborton.jpg)  no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    opacity: 0.9;
+    
+
+   .landlord-container {
+    width: 80% ;
+    margin: 0 auto;
+    padding-top: 1.5em;
+
+    .intro-text, .client-testimonial {
+        font-weight: base.$extra-bold-text;
+        font-size: base.$large-text;
+        line-height: 1.3em;
+        padding: 0.5em;
+        margin-bottom: 1em;
+        color: base.$tertiary-color;
+
+    }
+
+    .client {
+        text-align: center;
+        font-size: base.$medium-text;
+        color:darken(base.$subtle-color, 30%);
+    }
+
+    .call-to-action {
+        padding: 0 1em;
+
+        .client-enquiry {
+            color: base.$primary-color;
+            font-weight: base.$bold-text;
+            font-size: base.$medium-text;
+            line-height: base.$lh-medium;
+            margin-bottom: 1em;
+        }
+
+        .existing-client {
+            color: base.$tertiary-color;
+            font-size: base.$medium-text;
+            line-height: base.$lh-medium;
+            text-align: center;
+
+            a {
+                color: darken(base.$subtle-color, 30%);
+            }
+        }
+
+        .client-register-btn {
+            width: 50%;
+            margin: 0 auto;
+            padding: 1em 0.5em;
+
+            button {
+                padding: 0.5em 0.75em;
+                background: base.$primary-color;
+                border-radius: 10px;
+                a {
+                    font-size: base.$medium-text;
+                    color: base.$tertiary-color;
+                }
+            }
+        }
+    }
+
+   }
+}
+
+.management-benefits {
+    background: lighten(base.$tertiary-color, 40%);
+    padding-top: 1.5em;
+
+    .benefits-card {
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 1.5em;
+        height: 500px;
+        border: 1px solid base.$secondary-color;
+        border-radius: 10px;
+        box-shadow: 10px 10px 10px #444 ;
+
+        .benefit-image {
+            height: 150px;
+            img {
+                width: 100%;
+                height: 150px;
+                object-fit: fill;
+                
+            }
+        }
+
+        .service-offered {
+            padding: 1em 0.75em;
+
+            .service-title {
+                text-align: center;
+                font-size: base.$large-text;
+                color: base.$primary-color;
+            }
+
+            .service-summary {
+                font-size: base.$medium-text;
+                color: lighten(base.$primary-color, 25%);
+                padding: 0.5em 0.3em;
+                line-height: base.$lh-medium;
+            }
+            }
+
+            .service-detail {
+                padding: 0 0.8em;
+                .service-statement {
+                    // padding: 0.7em;
+                    // color: base.$subtle-color;
+                    color: #444;
+                }
+
+                .client-register-btn {
+                    width: 80%;
+                    margin: 0 auto;
+                    padding: 1.5em 0.5em;
+        
+                    button {
+                        width: 100%;
+                        padding: 0.5em 0.75em;
+                        // background: base.$primary-color;
+                        border-radius: 10px;
+                        border: 1px solid base.$subtle-color;
+                        a {
+                            font-size: base.$medium-text;
+                            color: base.$subtle-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+// comparative summary of packages on offer
+    .detailed-info {
+        min-height: 25vh;
+        background-color: base.$secondary-color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        .info-container {
+            width: 80%;
+
+            h2 {
+                padding: 1.5em 0.5em;
+                color: base.$tertiary-color;
+            }
+
+            a {
+                font-size: base.$medium-text;
+                color: darken(base.$subtle-color, 40%);
+                padding-bottom: 0.5em;
+            }
+        }
+    }
+
+    // This section pertains to the letting packages 
+
+    .letting-packages {
+        background: lighten(base.$tertiary-color, 35%);
+       
+
+        .package-container {
+            margin: 1em 0;
+            .package-header {
+               
+                background: base.$subtle-color;
+                min-height: 15vh;
+                text-align: center;
+                padding: 1em;
+
+                .package-title {
+                    padding: 1em 0.5em;
+                    color: base.$tertiary-color;
+
+                }
+
+                .package-fee {
+                    padding-bottom: 0.5em;
+                    color: darken(base.$secondary-color, 45%);
+                }
+
+                a {
+                    font-size: base.$small-text;
+                    color:base.$tertiary-color;
+                    text-decoration: underline;
+                  
+
+              }
+            }
+
+            .package-body {
+                min-height: 35vh;
+                text-align: center;
+
+                .package-options {
+                    width:70%;
+                    margin: 1em auto;
+                    text-align: center;
+
+                    ul {
+                        li {
+                            padding: 0.5em 0.3em;
+                            border-bottom: 1px solid base.$subtle-color;
+                        }
+                    }
+                }
+
+                .client-register-btn {
+                    width: 70%;
+                    margin: 0 auto;
+                    padding: 1.5em 0.5em;
+        
+                    button {
+                        width: 100%;
+                        padding: 0.5em 0.75em;
+                        // background: base.$primary-color;
+                        border-radius: 10px;
+                        border: 1px solid base.$subtle-color;
+                        a {
+                            font-size: base.$medium-text;
+                            color: darken(base.$secondary-color, 45%);
+                        }
+                    }
+                }
+
+
+            }
+        }
+    }

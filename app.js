@@ -19,6 +19,9 @@ app.get("/sell",(req,res)=>{
 app.get("/rental",(req,res)=>{
     res.render('rental')
 })
+app.get("/property-management",(req,res)=>{
+    res.render('property-management')
+})
 
 
 
