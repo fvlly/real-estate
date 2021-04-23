@@ -13,7 +13,7 @@
         margin: 0 auto;
 
         .navbar-items {
-               
+            padding-bottom: 1em;   
             
             
             .navbar-item {
@@ -24,10 +24,18 @@
         &.open {
            .navbar-item{
             display: block;
-            padding: 0.25em;
+            padding: 0.4em;
                 .navbar-link {
                     color: base.$tertiary-color;
                 }
+
+              &.btn {
+                background:darken(base.$subtle-color, 40%);
+                border:1px solid base.$tertiary-color;
+                border-radius: 5px;
+                width: 50%;
+                margin: 0.5em auto;
+              }
            }
         }
         }

@@ -58,16 +58,26 @@ li {
   width: 80%;
   margin: 0 auto;
 }
+.navbar .navbar-container .navbar-items {
+  padding-bottom: 1em;
+}
 .navbar .navbar-container .navbar-items .navbar-item {
   display: none;
   text-align: center;
 }
 .navbar .navbar-container .navbar-items.open .navbar-item {
   display: block;
-  padding: 0.25em;
+  padding: 0.4em;
 }
 .navbar .navbar-container .navbar-items.open .navbar-item .navbar-link {
   color: #FFFADE;
+}
+.navbar .navbar-container .navbar-items.open .navbar-item.btn {
+  background: #1c3d33;
+  border: 1px solid #FFFADE;
+  border-radius: 5px;
+  width: 50%;
+  margin: 0.5em auto;
 }
 .navbar .navbar-container .toggle-menu {
   position: absolute;
@@ -655,6 +665,123 @@ footer i {
 .letting-packages .package-container .package-body .client-register-btn button a {
   font-size: 1.5rem;
   color: #352c6e;
+}
+
+.register {
+  min-height: 100vh;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.register .close {
+  position: relative;
+  top: -10px;
+  left: 370px;
+  z-index: 5;
+  cursor: pointer;
+}
+.register .close a {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #FFFADE;
+}
+.register .close::after {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -10px;
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #6BBAA3;
+  z-index: -1;
+}
+.register .register-container {
+  width: 90%;
+  margin: 0 auto;
+}
+.register .register-container h1 {
+  text-align: center;
+  padding: 0.5em 0.5em;
+  color: #444;
+}
+.register .register-container .log-in {
+  width: 60%;
+  margin: 0 auto;
+  padding: 0 0 0.5em 0;
+  color: #5e5e5e;
+}
+.register .register-container .log-in a {
+  text-decoration: underline;
+  color: #ACA5DB;
+}
+.register .register-container .oAuth {
+  width: 90%;
+  display: flex;
+  margin: 1em 0.5em;
+}
+.register .register-container .oAuth .brand {
+  width: 90%;
+  padding: 0.5em 0;
+  background: #1938AB;
+  text-align: center;
+  border-radius: 5px;
+}
+.register .register-container .oAuth .brand a {
+  color: #FFFADE;
+}
+.register .register-container .oAuth .brand-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10%;
+  padding: 0.5em;
+  border: 1px solid currentColor;
+  border-radius: 5px;
+}
+.register .register-container .seperator {
+  text-align: center;
+}
+.register .register-container .sign-up-form {
+  width: 90%;
+}
+.register .register-container .sign-up-form label {
+  font-size: 600;
+  color: #444;
+}
+.register .register-container .sign-up-form input {
+  outline: auto;
+  padding: 0.5em;
+  margin: 0.5em 0.3em;
+}
+.register .register-container .sign-up-form .policies {
+  padding: 0.5em;
+  font-size: 0.8rem;
+  line-height: 1.3;
+  color: #444;
+}
+.register .register-container .sign-up-form .policies span {
+  font-weight: 600;
+}
+.register .register-container .sign-up-form .policies a {
+  text-decoration: underline;
+}
+.register .register-container .sign-up-form .sign-up-btn {
+  margin-top: 1em;
+}
+.register .register-container .sign-up-form .sign-up-btn button {
+  width: 100%;
+  padding: 0.5em;
+  font-size: 1.5rem;
+  background: #6BBAA3;
+  color: #FFFADE;
+  border-radius: 10px;
+  margin-bottom: 1em;
+}
+.register .register-container .sign-up-form .sign-up-btn a {
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=main.css.map */

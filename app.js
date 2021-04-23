@@ -23,6 +23,16 @@ app.get("/property-management",(req,res)=>{
     res.render('property-management')
 })
 
+app.get("/register",(req,res)=>{
+    res.render('register')
+})
+app.get("/log-in",(req,res)=>{
+    res.render('log-in')
+})
+app.get("/password-reset",(req,res)=>{
+    res.render('password-reset')
+})
+
 
 
 

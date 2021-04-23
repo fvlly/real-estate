@@ -1,0 +1,142 @@
+@use "../base" as base;
+
+.register {
+  min-height: 100vh;
+  background: lighten(base.$tertiary-color, 40%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .close {
+    position: relative;
+    top: -10px;
+    left: 370px;
+    z-index: 5;
+
+    // color: base.$tertiary-color;
+    cursor: pointer;
+
+    a {
+      font-size: base.$medium-text;
+      font-weight: base.$bold-text;
+      color: base.$tertiary-color;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: -5px;
+      left: -10px;
+      display: block;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: base.$subtle-color;
+      z-index: -1;
+    }
+  }
+
+  .register-container {
+    width: 90%;
+    margin: 0 auto;
+
+    h1 {
+      text-align: center;
+      padding: 0.5em 0.5em;
+      color: #444;
+    }
+
+    .log-in {
+      width: 60%;
+      margin: 0 auto;
+      padding: 0 0 0.5em 0;
+      color: lighten(#444, 10%);
+
+      a {
+        text-decoration: underline;
+        color: base.$secondary-color;
+      }
+    }
+
+    .oAuth {
+      width: 90%;
+      display: flex;
+      margin: 1em 0.5em;
+
+      .brand {
+        width: 90%;
+        padding: 0.5em 0;
+        background: base.$primary-color;
+        text-align: center;
+        border-radius: 5px;
+
+        a {
+        
+            
+            color: base.$tertiary-color;
+          }
+      }
+
+      .brand-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 10%;
+        padding: 0.5em;
+        border: 1px solid currentColor;
+        border-radius: 5px;
+      }
+    }
+    .seperator {
+      text-align: center;
+    }
+
+    .sign-up-form {
+      width: 90%;
+
+      label {
+        font-size: base.$bold-text;
+        color: #444;
+      }
+
+      input {
+        outline: auto;
+        padding: 0.5em;
+        margin: 0.5em 0.3em;
+      }
+
+      .policies {
+          padding: 0.5em;
+          font-size: base.$small-text;
+          line-height: base.$lh-medium;
+          color: #444;
+
+          span {
+              font-weight: base.$bold-text;
+          }
+
+          a{
+              text-decoration: underline;
+          }
+      }
+
+      .sign-up-btn {
+        margin-top: 1em;
+
+        button {
+          width: 100%;
+          padding: 0.5em;
+          font-size: base.$medium-text;
+          background: base.$subtle-color;
+          color: base.$tertiary-color;
+          border-radius: 10px;
+          margin-bottom: 1em;
+        }
+
+        a{ 
+            text-decoration: underline;
+        }
+      }
+    }
+  }
+}
