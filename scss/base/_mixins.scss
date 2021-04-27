@@ -25,3 +25,55 @@
     background-position: right .7em top 50%, 0 0;
     background-size: .65em auto, 100%;
 }
+
+
+@mixin grid($template-columns, $template-rows) {
+  display: grid;
+  grid-template-columns: $template-columns;
+  grid-template-rows: $template-rows;
+}
+
+// @mixin section($color) {
+//   min-height: 100vh;
+//   background-color: $color;
+// }
+// moved button from components
+// @mixin button($padding, $border, $border-radius, $bg-color, $color) {
+//   padding: $padding;
+//   border-radius: $border-radius;
+//   background-color: $bg-color;
+//   border: $border;
+//   color: $color;
+// }
+
+
+
+@mixin rwd($breakpoint) {
+  @if $breakpoint == phone {
+    @media (max-width: 400px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == tablet {
+    @media (min-width: 750px) {
+      @content;
+    }
+  }
+  @if $breakpoint == tablet2 {
+    @media (min-width: 900px) {
+      @content;
+    }
+  }
+  @if $breakpoint == desktop {
+    @media (min-width: 1200px) {
+      @content;
+    }
+  }
+  @if $breakpoint == bigscreens {
+    @media (min-width: 1800px) {
+      @content;
+    }
+  }
+}
+

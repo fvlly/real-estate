@@ -4,7 +4,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Source Sans Pro", sans-serif;
 }
 
 h1,
@@ -58,12 +57,15 @@ li {
 }
 .register .close {
   position: relative;
-  top: -10px;
-  left: 370px;
+  top: -15px;
+  left: 300px;
   z-index: 5;
   cursor: pointer;
 }
-.register .close a {
+.register .close .close-icon {
+  position: absolute;
+  top: -20px;
+  left: 10px;
   font-size: 1.5rem;
   font-weight: 600;
   color: #FFFADE;
@@ -71,14 +73,29 @@ li {
 .register .close::after {
   content: "";
   position: absolute;
-  top: -5px;
-  left: -10px;
+  top: -20px;
+  left: 0px;
   display: block;
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
   border-radius: 50%;
   background: #6BBAA3;
   z-index: -1;
+}
+@media (min-width: 750px) {
+  .register .close {
+    top: -15px;
+    left: 800px;
+    width: 50px;
+  }
+  .register .close .close-icon {
+    position: absolute;
+    top: -15px;
+    left: 7px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #FFFADE;
+  }
 }
 .register .register-container {
   width: 90%;
@@ -90,7 +107,7 @@ li {
   color: #444;
 }
 .register .register-container .log-in {
-  width: 60%;
+  width: 70%;
   margin: 0 auto;
   padding: 0 0 0.5em 0;
   color: #5e5e5e;
@@ -102,7 +119,7 @@ li {
 .register .register-container .oAuth {
   width: 90%;
   display: flex;
-  margin: 1em 0.5em;
+  margin: 1em auto;
 }
 .register .register-container .oAuth .brand {
   width: 90%;
@@ -128,13 +145,14 @@ li {
 }
 .register .register-container .sign-up-form {
   width: 90%;
+  margin: 0 auto;
 }
 .register .register-container .sign-up-form label {
   font-size: 600;
   color: #444;
 }
 .register .register-container .sign-up-form input {
-  outline: auto;
+  outline: 1px solid #ACA5DB;
   padding: 0.5em;
   margin: 0.5em 0.3em;
 }
@@ -164,6 +182,88 @@ li {
 }
 .register .register-container .sign-up-form .sign-up-btn a {
   text-decoration: underline;
+}
+@media (min-width: 750px) {
+  .register .register-container {
+    width: 50%;
+    margin: 0 auto;
+  }
+  .register .register-container h1 {
+    text-align: center;
+    font-size: 2rem;
+    padding: 0.5em 0.5em;
+    color: #444;
+  }
+  .register .register-container .log-in {
+    width: 60%;
+    margin: 0 auto;
+    padding: 0 0 0.5em 0;
+    font-size: 1.5rem;
+    font-family: 600;
+    color: #5e5e5e;
+  }
+  .register .register-container .log-in a {
+    text-decoration: underline;
+    color: #ACA5DB;
+  }
+  .register .register-container .oAuth {
+    width: 90%;
+    display: flex;
+    margin: 1em auto;
+  }
+  .register .register-container .oAuth .brand {
+    width: 90%;
+    padding: 0.5em 0;
+    background: #1938AB;
+    text-align: center;
+    border-radius: 5px;
+  }
+  .register .register-container .oAuth .brand a {
+    color: #FFFADE;
+  }
+  .register .register-container .oAuth .brand-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    padding: 0.5em;
+    border: 1px solid currentColor;
+    border-radius: 5px;
+  }
+  .register .register-container .seperator {
+    text-align: center;
+  }
+  .register .register-container .sign-up-form {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .register .register-container .sign-up-form label {
+    font-weight: 600;
+    color: #444;
+    padding: 1em 0;
+    margin-bottom: 0.5em;
+  }
+  .register .register-container .sign-up-form input {
+    outline: auto;
+    padding: 0.5em;
+    margin: 0.5em 0.3em;
+    line-height: 1.6;
+  }
+  .register .register-container .sign-up-form .sign-up-btn {
+    margin-top: 1em;
+  }
+  .register .register-container .sign-up-form .sign-up-btn button {
+    width: 100%;
+    padding: 0.5em;
+    font-size: 1.5rem;
+    background: #6BBAA3;
+    color: #FFFADE;
+    border-radius: 10px;
+    margin-bottom: 1em;
+  }
+  .register .register-container .sign-up-form .sign-up-btn a {
+    text-decoration: underline;
+  }
 }
 
 /*# sourceMappingURL=register.css.map */

@@ -1,37 +1,61 @@
-@use '../base/variables' as base;
+@use '../base' as base;
 
 .listings {
   min-height: 100vh;
-  background: base.$secondary-color;
+  background: lighten(base.$tertiary-color, 15%);
+  padding: 1.5em 0;
 
  
 }
 
 .listings-container {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     
     .listing-portfolio {
-      width: 350px;
-      height: 350px;
+      position: relative;
+      width: 300px;
+      height: 400px;
       border: 1px solid #444;
       margin: 1em auto;
+      background: darken(base.$tertiary-color, 10%);
+      color: #444;
+
+      .save-listing {
+        position: absolute;
+        top:20px;
+        left: 270px;
+        background: base.$subtle-color;
+        border-radius: 50%;
+        padding: 0.5em;
+      }
+
 
       .listing-image {
         width: 100%;
-        min-height: 250px;
+        min-height: 300px;
           border: 1px solid #444;
       }
 
       .listing-detail {
+       
           
-        .list-description {
+        .list-price {
           font-size: base.$medium-text;
+          font-weight: base.$bold-text;
+          padding: 0.5em 0.25em;
+         
+
         }
 
-        .list-price {
+        .list-description {
           font-size: base.$base-text;
         }
       }
+    }
+    @include base.rwd(tablet) {
+      display: flex;
+      justify-content: space-between;
+      
     }
   }

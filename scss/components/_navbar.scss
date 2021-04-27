@@ -1,4 +1,4 @@
-@use '../base/variables' as base ;
+@use '../base' as base ;
 
 //active class to open navbar menu
 
@@ -29,12 +29,26 @@
                     color: base.$tertiary-color;
                 }
 
-              &.btn {
+              &.btn-register {
                 background:darken(base.$subtle-color, 40%);
                 border:1px solid base.$tertiary-color;
                 border-radius: 5px;
                 width: 50%;
                 margin: 0.5em auto;
+
+                
+              }
+              &.btn-login {
+                background:base.$tertiary-color;
+                border:1px solid base.$tertiary-color;
+                border-radius: 5px;
+                width: 50%;
+                margin: 0.5em auto;
+
+                .navbar-link {
+                  color: base.$subtle-color;
+              }
+                
               }
            }
         }

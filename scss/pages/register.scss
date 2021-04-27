@@ -9,14 +9,18 @@
 
   .close {
     position: relative;
-    top: -10px;
-    left: 370px;
+    top: -15px;
+    left: 300px;
     z-index: 5;
 
     // color: base.$tertiary-color;
     cursor: pointer;
 
-    a {
+    .close-icon {
+      position: absolute;
+      top: -20px;
+      left: 10px;
+
       font-size: base.$medium-text;
       font-weight: base.$bold-text;
       color: base.$tertiary-color;
@@ -25,14 +29,31 @@
     &::after {
       content: "";
       position: absolute;
-      top: -5px;
-      left: -10px;
+      top: -20px;
+      left: 0px;
       display: block;
-      width: 40px;
-      height: 40px;
+      width: 35px;
+      height: 35px;
       border-radius: 50%;
       background: base.$subtle-color;
       z-index: -1;
+    }
+
+    @include base.rwd(tablet) {
+      top: -15px;
+      left: 800px;
+      width: 50px;
+      .close-icon {
+        position: absolute;
+        top: -15px;
+        left: 7px;
+
+        font-size: base.$medium-text;
+        font-weight: base.$bold-text;
+        color: base.$tertiary-color;
+      }
+
+     
     }
   }
 
@@ -47,7 +68,7 @@
     }
 
     .log-in {
-      width: 60%;
+      width: 70%;
       margin: 0 auto;
       padding: 0 0 0.5em 0;
       color: lighten(#444, 10%);
@@ -61,7 +82,7 @@
     .oAuth {
       width: 90%;
       display: flex;
-      margin: 1em 0.5em;
+      margin: 1em auto;
 
       .brand {
         width: 90%;
@@ -71,10 +92,8 @@
         border-radius: 5px;
 
         a {
-        
-            
-            color: base.$tertiary-color;
-          }
+          color: base.$tertiary-color;
+        }
       }
 
       .brand-icon {
@@ -93,6 +112,7 @@
 
     .sign-up-form {
       width: 90%;
+      margin: 0 auto;
 
       label {
         font-size: base.$bold-text;
@@ -100,24 +120,24 @@
       }
 
       input {
-        outline: auto;
+        outline: 1px solid base.$secondary-color;
         padding: 0.5em;
         margin: 0.5em 0.3em;
       }
 
       .policies {
-          padding: 0.5em;
-          font-size: base.$small-text;
-          line-height: base.$lh-medium;
-          color: #444;
+        padding: 0.5em;
+        font-size: base.$small-text;
+        line-height: base.$lh-medium;
+        color: #444;
 
-          span {
-              font-weight: base.$bold-text;
-          }
+        span {
+          font-weight: base.$bold-text;
+        }
 
-          a{
-              text-decoration: underline;
-          }
+        a {
+          text-decoration: underline;
+        }
       }
 
       .sign-up-btn {
@@ -133,8 +153,102 @@
           margin-bottom: 1em;
         }
 
-        a{ 
+        a {
+          text-decoration: underline;
+        }
+      }
+    }
+    @include base.rwd(tablet) {
+      width: 50%;
+      margin: 0 auto;
+
+      h1 {
+        text-align: center;
+        font-size: base.$large-text;
+        padding: 0.5em 0.5em;
+        color: #444;
+      }
+
+      .log-in {
+        width: 60%;
+        margin: 0 auto;
+        padding: 0 0 0.5em 0;
+        font-size: base.$medium-text;
+        font-family: base.$bold-text;
+        color: lighten(#444, 10%);
+
+        a {
+          text-decoration: underline;
+          color: base.$secondary-color;
+        }
+      }
+
+      .oAuth {
+        width: 90%;
+        display: flex;
+        margin: 1em auto;
+
+        .brand {
+          width: 90%;
+          padding: 0.5em 0;
+          background: base.$primary-color;
+          text-align: center;
+          border-radius: 5px;
+
+          a {
+            color: base.$tertiary-color;
+          }
+        }
+
+        .brand-icon {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 10%;
+          padding: 0.5em;
+          border: 1px solid currentColor;
+          border-radius: 5px;
+        }
+      }
+      .seperator {
+        text-align: center;
+      }
+
+      .sign-up-form {
+        width: 90%;
+        margin: 0 auto;
+
+        label {
+          font-weight: base.$bold-text;
+          color: #444;
+          padding: 1em 0;
+          margin-bottom: 0.5em;
+        }
+
+        input {
+          outline: auto;
+          padding: 0.5em;
+          margin: 0.5em 0.3em;
+          line-height: base.$lh-large;
+        }
+
+
+        .sign-up-btn {
+          margin-top: 1em;
+
+          button {
+            width: 100%;
+            padding: 0.5em;
+            font-size: base.$medium-text;
+            background: base.$subtle-color;
+            color: base.$tertiary-color;
+            border-radius: 10px;
+            margin-bottom: 1em;
+          }
+
+          a {
             text-decoration: underline;
+          }
         }
       }
     }

@@ -1,4 +1,4 @@
-@use '../base/variables' as base;
+@use '../base' as base;
 
 .intro {
     min-height: 80vh;
@@ -15,10 +15,15 @@
 
     .intro-text {
         font-weight: base.$extra-bold-text;
-        font-size: base.$xlarge-text;
+        font-size: base.$large-text;
         line-height: base.$lh-medium;
         padding: 0.5em;
         margin-bottom: 1em;
+        color: #444;
+        @include base.rwd(tablet) {
+            font-size: base.$xlarge-text;
+        line-height: base.$lh-medium;
+        }
     }
 
     .input-container {
@@ -33,8 +38,10 @@
             border-radius: 5px;
 
             select {
-                background-color: inherit;
-                color: #fff;
+                @include base.property-select;
+                width: auto;
+                background: base.$subtle-color;
+                border: none;
             }
         
         }
@@ -53,7 +60,7 @@
             margin-left: auto;
             
             
-            // padding: 0.25em;
+            padding: 0 1em;
 
             i {
                 font-size: base.$medium-text;

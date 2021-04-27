@@ -1,4 +1,7 @@
-@use "../base/variables" as base;
+@use "../base" as base;
+
+
+// this sections pertains to the about section
 
 .general-info {
     
@@ -21,6 +24,21 @@
            a {
               padding: 0.5em;
               color: base.$secondary-color;
+           }
+       }
+
+       @include base.rwd(tablet) {
+           display: flex;
+           justify-content: space-between;
+           padding: 1em 0;
+
+           .about-us, .popular-searches, .support {
+                width: 33.33%;
+               border-bottom: none;
+                h3 {
+                    font-size: base.$large-text;
+                }
+
            }
        }
     }
